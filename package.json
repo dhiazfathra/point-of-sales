@@ -2,7 +2,7 @@
   "name": "point-of-sales",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "pnpm",
+  "packageManager": "bun",
   "devDependencies": {
     "@nx-go/nx-go": "4.0.0-beta.0",
     "@nx/js": "^22.5.4",

@@ -4,5 +4,71 @@
   },
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "defaultBase": "master",
-  "nxCloudId": "69baaa5b94e12811e080a9fa"
+  "nxCloudId": "69baaa5b94e12811e080a9fa",
+  "plugins": [
+    {
+      "plugin": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "devTargetName": "dev",
+        "previewTargetName": "preview",
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "typecheck",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps"
+      }
+    },
+    {
+      "plugin": "@nxrocks/nx-flutter",
+      "options": {
+        "analyzeTargetName": "analyze",
+        "cleanTargetName": "clean",
+        "formatTargetName": "format",
+        "testTargetName": "test",
+        "assembleTargetName": "assemble",
+        "attachTargetName": "attach",
+        "driveTargetName": "drive",
+        "genL10nTargetName": "gen-l10n",
+        "installTargetName": "install",
+        "runTargetName": "run",
+        "buildAarTargetName": "build-aar",
+        "buildApkTargetName": "build-apk",
+        "buildAppbundleTargetName": "build-appbundle",
+        "buildBundleTargetName": "build-bundle",
+        "buildIosTargetName": "build-ios",
+        "buildIosFrameworkTargetName": "build-ios-framework",
+        "buildIpaTargetName": "build-ipa",
+        "pubGetTargetName": "pub-get",
+        "pubUpgradeTargetName": "pub-upgrade",
+        "pubDowngradeTargetName": "pub-downgrade",
+        "pubOutdatedTargetName": "pub-outdated",
+        "pubAddTargetName": "pub-add",
+        "pubRemoveTargetName": "pub-remove",
+        "pubRunTargetName": "pub-run",
+        "pubPublishTargetName": "pub-publish",
+        "pubDepsTargetName": "pub-deps",
+        "pubVersionTargetName": "pub-version"
+      }
+    }
+  ],
+  "generators": {
+    "@nx/react": {
+      "application": {
+        "babel": true,
+        "style": "css",
+        "linter": "none",
+        "bundler": "vite"
+      },
+      "component": {
+        "style": "css"
+      },
+      "library": {
+        "style": "css",
+        "linter": "none"
+      }
+    }
+  },
+  "targetDefaults": {}
 }

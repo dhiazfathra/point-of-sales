@@ -191,6 +191,7 @@ vite.config.ts.timestamp-*
 .c*
 .o*
 .DS_Store
+ctx
 
 # Flutter repo-specific
 /bin/cache/

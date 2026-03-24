@@ -51,6 +51,12 @@
         "pubDepsTargetName": "pub-deps",
         "pubVersionTargetName": "pub-version"
       }
+    },
+    {
+      "plugin": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
     }
   ],
   "generators": {
